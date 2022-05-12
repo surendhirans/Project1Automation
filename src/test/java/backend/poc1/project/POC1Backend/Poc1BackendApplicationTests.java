@@ -55,7 +55,7 @@ class Poc1BackendApplicationTests {
 		
 		when(repo.findAll()).thenReturn(Stream.of(res1,res2,res3,res4).collect(Collectors.toList()));
 		
-		assertSame("Chennai",service.list().get(1).getResArea());
+		assertSame("Banglore",service.list().get(1).getResArea());
 	}
 	@Test
 	public void testList3()
